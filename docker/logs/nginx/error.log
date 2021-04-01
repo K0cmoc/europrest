@@ -1,0 +1,1110 @@
+2021/03/24 11:26:44 [error] 11#0: *220 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/ProductController.php on line 121. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException in /var/www/htdocs/modules/api/controllers/ProductController.php:129
+Stack trace:
+#0 [internal function]: app\modules\api\controllers\ProductController->actionUpdate('5')
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/htdocs/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('update', Array)
+#4 /var/www/htdocs/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('api/product/upd...', Array)
+#5 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5
+2021/03/24 11:26:44 [error] 11#0: *220 FastCGI sent in stderr: "https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz/from/this/mirror',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'advanced-frontend=ccdff78e35bf7405adb299ca0ec16fef; _csrf-frontend=f0c8e700bf3c2fbb953d434f66ae26259c089c26188d07e5e96ada42dd04720ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cHOE5QYXjiJe_JeAIHD6p1q9upWAlPr8%22%3B%7D; PHPSESSID=3721bb7655b8af3e742fb4534202bafa; _csrf=9a72ca0a92eab8233a29923b301a512e2a768c5dc9aed5f98d019b3abf921f26a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LzywVLuKx4jQrDDIq1o-YJ1hI4okip0E%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '88',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.5',
+    'REMOTE_PORT' => '55280',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    
+2021/03/24 11:28:59 [error] 11#0: *222 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/ProductController.php on line 122. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException in /var/www/htdocs/modules/api/controllers/ProductController.php:129
+Stack trace:
+#0 [internal function]: app\modules\api\controllers\ProductController->actionUpdate('5')
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/htdocs/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('update', Array)
+#4 /var/www/h" while reading upstream, client: 172.22.0.1, server: , request: "PUT /api/product/5 HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/24 11:28:59 [error] 11#0: *222 FastCGI sent in stderr: "tdocs/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('api/product/upd...', Array)
+#5 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz/from/this/mirror',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'advanced-frontend=ccdff78e35bf7405adb299ca0ec16fef; _csrf-frontend=f0c8e700bf3c2fbb953d434f66ae26259c089c26188d07e5e96ada42dd04720ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cHOE5QYXjiJe_JeAIHD6p1q9upWAlPr8%22%3B%7D; PHPSESSID=3721bb7655b8af3e742fb4534202bafa; _csrf=9a72ca0a92eab8233a29923b301a512e2a768c5dc9aed5f98d019b3abf921f26a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LzywVLuKx4jQrDDIq1o-YJ1hI4okip0E%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-R
+2021/03/26 04:57:19 [error] 9#0: *29 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\db\IntegrityException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#4 {main}
+Previous exception:
+PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'AnoerMeat' for key 'product.name' in /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php:1299
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php(1299): PDOStatement->execute()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php(1099): yii\db\Command->internalExecute('UPDATE `product...')
+#2 /var/www/htdocs/vendor/yiisoft/yii2/db/ActiveRecord.php(332): yii\db\Command->execute()
+#3 /var/www/htdocs/vendor/yiisoft/yii2/db/BaseActiveRecord.php(810): yii\db\ActiveRecord::updateAll(Array, Array)
+#4 /var/www/htdocs/vendor/yiisoft/yii2/db/ActiveRecord.php(676): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /var/www/htdocs/vendor/yiisoft/yii2/db/BaseActiveRecord.php(681): yii\db\ActiveRecord->update(false, NULL)
+#6 /var/www/htdocs/modules/services/product/UpdateProductService.php(17): yii\db\BaseActiveRecord->save(false)
+#7 /var/www/htdocs/modules/api/controllers/ProductController.php(127): app\modules\services\product\UpdateProductService->update(Object(app\models\Product), Object(app\modules\api\forms\product\UpdateProductForm))
+#8 [internal function]: app\modules\api\controllers\ProductController->actionUpdate('10')
+#9 /var/www/htdocs/vendor/yii
+2021/03/26 04:57:19 [error] 9#0: *29 FastCGI sent in stderr: "r/www/htdocs/vendor/yiisoft/yii2/db/Schema.php:678
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php(1304): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `product...')
+#1 /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php(1099): yii\db\Command->internalExecute('UPDATE `product...')
+#2 /var/www/htdocs/vendor/yiisoft/yii2/db/ActiveRecord.php(332): yii\db\Command->execute()
+#3 /var/www/htdocs/vendor/yiisoft/yii2/db/BaseActiveRecord.php(810): yii\db\ActiveRecord::updateAll(Array, Array)
+#4 /var/www/htdocs/vendor/yiisoft/yii2/db/ActiveRecord.php(676): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /var/www/htdocs/vendor/yiisoft/yii2/db/BaseActiveRecord.php(681): yii\db\ActiveRecord->update(false, NULL)
+#6 /var/www/htdocs/modules/services/product/UpdateProductService.php(17): yii\db\BaseActiveRecord->save(false)
+#7 /var/www/htdocs/modules/api/controllers/ProductController.php(127): app\modules\services\product\UpdateProductService->update(Object(app\models\Product), Object(app\modules\api\forms\product\UpdateProductForm))
+#8 [internal function]: app\modules\api\controllers\ProductController->actionUpdate('10')
+#9 /var/www/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /var/www/htdocs/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#11 /var/www/htdocs/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('update', Array)
+#12 /var/www/htdocs/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('api/product/upd...', Array)
+#13 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry 'AnoerMeat' for key 'product.name'
+)
+
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--
+2021/03/26 04:57:19 [error] 9#0: *29 FastCGI sent in stderr: "
+    'REMOTE_PORT' => '58812',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/product/10',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '86',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'PUT',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1616734639.265328,
+    'REQUEST_TIME' => 1616734639,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "PUT /api/product/10 HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/26 04:57:51 [error] 9#0: *31 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\db\IntegrityException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#4 {main}
+Previous exception:
+PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'AnoerMeat' for key 'product.name' in /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php:1299
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php(1299): PDOStatement->execute()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php(1099): yii\db\Command->internalExecute('UPDATE `product...')
+#2 /var/www/htdocs/vendor/yiisoft/yii2/db/ActiveRecord.php(332): yii\db\Command->execute()
+#3 /var/www/htdocs/vendor/yiisoft/yii2/db/BaseActiveRecord.php(810): yii\db\ActiveRecord::updateAll(Array, Array)
+#4 /var/www/htdocs/vendor/yiisoft/yii2/db/ActiveRecord.php(676): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /var/www/htdocs/vendor/yiisoft/yii2/db/BaseActiveRecord.php(681): yii\db\ActiveRecord->update(false, NULL)
+#6 /var/www/htdocs/modules/services/product/UpdateProductService.php(17): yii\db\BaseActiveRecord->save(false)
+#7 /var/www/htdocs/modules/api/controllers/ProductController.php(127): app\modules\services\product\UpdateProductService->update(Object(app\models\Product), Object(app\modules\api\forms\product\UpdateProductForm))
+#8 [internal function]: app\modules\api\controllers\ProductController->actionUpdate('10')
+#9 /var/www/htdocs/vendor/yii
+2021/03/26 04:57:51 [error] 9#0: *31 FastCGI sent in stderr: "E `id`=10 in /var/www/htdocs/vendor/yiisoft/yii2/db/Schema.php:678
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php(1304): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `product...')
+#1 /var/www/htdocs/vendor/yiisoft/yii2/db/Command.php(1099): yii\db\Command->internalExecute('UPDATE `product...')
+#2 /var/www/htdocs/vendor/yiisoft/yii2/db/ActiveRecord.php(332): yii\db\Command->execute()
+#3 /var/www/htdocs/vendor/yiisoft/yii2/db/BaseActiveRecord.php(810): yii\db\ActiveRecord::updateAll(Array, Array)
+#4 /var/www/htdocs/vendor/yiisoft/yii2/db/ActiveRecord.php(676): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /var/www/htdocs/vendor/yiisoft/yii2/db/BaseActiveRecord.php(681): yii\db\ActiveRecord->update(false, NULL)
+#6 /var/www/htdocs/modules/services/product/UpdateProductService.php(17): yii\db\BaseActiveRecord->save(false)
+#7 /var/www/htdocs/modules/api/controllers/ProductController.php(127): app\modules\services\product\UpdateProductService->update(Object(app\models\Product), Object(app\modules\api\forms\product\UpdateProductForm))
+#8 [internal function]: app\modules\api\controllers\ProductController->actionUpdate('10')
+#9 /var/www/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /var/www/htdocs/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#11 /var/www/htdocs/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('update', Array)
+#12 /var/www/htdocs/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('api/product/upd...', Array)
+#13 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry 'AnoerMeat' for key 'product.name'
+)
+
+$_SERVER = [
+    'PHP_EXTRA_CONFIG
+2021/03/26 04:57:51 [error] 9#0: *31 FastCGI sent in stderr: "=> '172.22.0.3',
+    'REMOTE_PORT' => '58820',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/product/10',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '86',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'PUT',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1616734671.131135,
+    'REQUEST_TIME' => 1616734671,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "PUT /api/product/10 HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/26 04:58:18 [error] 9#0: *33 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => ''," while reading upstream, client: 172.22.0.1, server: , request: "PUT /api/product/10 HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/26 04:58:18 [error] 9#0: *33 FastCGI sent in stderr: "
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz/from/this/mirror',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'PHPSESSID=2b0fd9894a9c5e9f35811eb880eb3bfb; _csrf=dbccbf5c0a84ca873fa7b6e7accbb1603b78bea3051483281184f30fd3e0aef8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-GjoYjkhUH4oaDRMs9_cYrv2T5Pjhxo%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '86',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.3',
+    'REMOTE_PORT' => '58828',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => 
+2021/03/26 05:01:50 [error] 9#0: *46 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/26 05:01:50 [error] 9#0: *46 FastCGI sent in stderr: ";q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '86',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.3',
+    'REMOTE_PORT' => '58880',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/product/5',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '86',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'PUT',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1616734910.747349,
+    'REQUEST_TIME' => 1616734910,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "PUT /api/product/5 HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/26 05:01:52 [error] 9#0: *46 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/26 05:01:52 [error] 9#0: *46 FastCGI sent in stderr: ";q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '86',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.3',
+    'REMOTE_PORT' => '58880',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/product/5',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '86',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'PUT',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1616734912.550439,
+    'REQUEST_TIME' => 1616734912,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "PUT /api/product/5 HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/26 05:02:03 [error] 9#0: *46 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/forms/product/UpdateProductForm.php on line 48. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => ''," while reading upstream, client: 172.22.0.1, server: , request: "PUT /api/product/5 HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/26 05:02:03 [error] 9#0: *46 FastCGI sent in stderr: "
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz/from/this/mirror',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'PHPSESSID=2b0fd9894a9c5e9f35811eb880eb3bfb; _csrf=dbccbf5c0a84ca873fa7b6e7accbb1603b78bea3051483281184f30fd3e0aef8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-GjoYjkhUH4oaDRMs9_cYrv2T5Pjhxo%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '86',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.3',
+    'REMOTE_PORT' => '58880',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => 
+2021/03/30 14:18:21 [error] 9#0: *53 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/30 14:18:21 [error] 9#0: *53 FastCGI sent in stderr: "g-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'PHPSESSID=bcdbcd467b4eefe42ce6163330f62686; _csrf=6f68c2def17f9c3eae9c8e3c189a19ae0d2d1e8b3547b5861a877011b19a186ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uRKI_m_nddRdDkSI9rKzGoAwud8wFXG4%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '32',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.2',
+    'REMOTE_PORT' => '64044',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/option_add',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '32',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1617113901.591871,
+    'REQUEST_TIME' => 1617113901,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", r
+2021/03/30 14:18:51 [error] 9#0: *55 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/30 14:18:51 [error] 9#0: *55 FastCGI sent in stderr: "wud8wFXG4%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '32',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.2',
+    'REMOTE_PORT' => '64050',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/option_add',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '32',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1617113931.290354,
+    'REQUEST_TIME' => 1617113931,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/30 14:19:13 [error] 9#0: *57 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/30 14:19:13 [error] 9#0: *57 FastCGI sent in stderr: "wud8wFXG4%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '32',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.2',
+    'REMOTE_PORT' => '64056',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/option_add',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '32',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1617113953.519177,
+    'REQUEST_TIME' => 1617113953,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/30 14:19:20 [error] 9#0: *57 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/30 14:19:20 [error] 9#0: *57 FastCGI sent in stderr: "g-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'PHPSESSID=bcdbcd467b4eefe42ce6163330f62686; _csrf=6f68c2def17f9c3eae9c8e3c189a19ae0d2d1e8b3547b5861a877011b19a186ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uRKI_m_nddRdDkSI9rKzGoAwud8wFXG4%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '32',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.2',
+    'REMOTE_PORT' => '64056',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/option_add',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '32',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1617113960.693461,
+    'REQUEST_TIME' => 1617113960,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", r
+2021/03/30 14:22:15 [error] 9#0: *67 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/30 14:22:15 [error] 9#0: *67 FastCGI sent in stderr: "g-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'PHPSESSID=bcdbcd467b4eefe42ce6163330f62686; _csrf=6f68c2def17f9c3eae9c8e3c189a19ae0d2d1e8b3547b5861a877011b19a186ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uRKI_m_nddRdDkSI9rKzGoAwud8wFXG4%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '34',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.2',
+    'REMOTE_PORT' => '64086',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/option_add',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '34',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1617114135.649123,
+    'REQUEST_TIME' => 1617114135,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", r
+2021/03/30 14:22:19 [error] 9#0: *67 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/30 14:22:19 [error] 9#0: *67 FastCGI sent in stderr: "g-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'PHPSESSID=bcdbcd467b4eefe42ce6163330f62686; _csrf=6f68c2def17f9c3eae9c8e3c189a19ae0d2d1e8b3547b5861a877011b19a186ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uRKI_m_nddRdDkSI9rKzGoAwud8wFXG4%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '32',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.2',
+    'REMOTE_PORT' => '64086',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/option_add',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '32',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1617114139.552533,
+    'REQUEST_TIME' => 1617114139,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", r
+2021/03/30 14:22:35 [error] 9#0: *70 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(Error))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#4 {main}
+Previous exception:
+Error: Typed property app\modules\api\forms\category\OptionAddForm::$category_id must not be accessed before initialization in /var/www/htdocs/vendor/yiisoft/yii2/validators/Validator.php:307
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/validators/Validator.php(261): yii\validators\Validator->validateAttribute(Object(app\modules\api\forms\category\OptionAddForm), 'category_id')
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\forms\category\OptionAddForm), Array)
+#2 /var/www/htdocs/modules" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
+2021/03/30 14:22:35 [error] 9#0: *70 FastCGI sent in stderr: "/api/controllers/CategoryController.php(201): yii\base\Model->validate()
+#3 [internal function]: app\modules\api\controllers\CategoryController->actionOptionAdd()
+#4 /var/www/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/htdocs/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/htdocs/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction('option-add', Array)
+#7 /var/www/htdocs/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('api/category/op...', Array)
+#8 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#10 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz/from/this/mirror',
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'PHPS
+2021/03/30 14:24:23 [error] 9#0: *72 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/30 14:24:23 [error] 9#0: *72 FastCGI sent in stderr: "g-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'PHPSESSID=bcdbcd467b4eefe42ce6163330f62686; _csrf=6f68c2def17f9c3eae9c8e3c189a19ae0d2d1e8b3547b5861a877011b19a186ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uRKI_m_nddRdDkSI9rKzGoAwud8wFXG4%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '32',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.2',
+    'REMOTE_PORT' => '64100',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/option_add',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '32',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1617114263.493371,
+    'REQUEST_TIME' => 1617114263,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", r
+2021/03/30 14:24:25 [error] 9#0: *72 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/30 14:24:25 [error] 9#0: *72 FastCGI sent in stderr: "g-config 		re2c',
+    'PWD' => '/var/www/htdocs',
+    'PHP_SHA256' => '561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762',
+    'USER' => 'www-data',
+    'HTTP_COOKIE' => 'PHPSESSID=bcdbcd467b4eefe42ce6163330f62686; _csrf=6f68c2def17f9c3eae9c8e3c189a19ae0d2d1e8b3547b5861a877011b19a186ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uRKI_m_nddRdDkSI9rKzGoAwud8wFXG4%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://europrest.local:8050/api/documentation',
+    'HTTP_ORIGIN' => 'http://europrest.local:8050',
+    'HTTP_CONTENT_TYPE' => 'application/json',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json',
+    'HTTP_CONTENT_LENGTH' => '32',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.2',
+    'REMOTE_PORT' => '64100',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/option_add',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '32',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1617114265.019792,
+    'REQUEST_TIME' => 1617114265,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", r
+2021/03/30 14:26:12 [error] 9#0: *75 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/htdocs/modules/api/controllers/CategoryController.php on line 200. in /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php:373
+Stack trace:
+#0 /var/www/htdocs/vendor/yiisoft/yii2/web/Response.php(346): yii\web\Response->sendHeaders()
+#1 /var/www/htdocs/vendor/yiisoft/yii2/base/Application.php(398): yii\web\Response->send()
+#2 /var/www/htdocs/web/index.php(12): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PHP_EXTRA_CONFIGURE_ARGS' => '--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi',
+    'HOSTNAME' => '526a23fb0077',
+    'PHP_INI_DIR' => '/usr/local/etc/php',
+    'HOME' => '/var/www',
+    'PHP_LDFLAGS' => '-Wl,-O1 -Wl,--hash-style=both -pie',
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_MD5' => '',
+    'PHP_VERSION' => '7.4.1',
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312',
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    'PHP_ASC_URL' => 'https://www.php.net/get/php-7.4.1.tar.xz.asc/from/this/mirror',
+    'PHP_URL' => 'https:
+2021/03/30 14:26:12 [error] 9#0: *75 FastCGI sent in stderr: "'europrest.local:8050',
+    'SCRIPT_FILENAME' => '/var/www/htdocs/web/index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '172.22.0.2',
+    'REMOTE_PORT' => '64108',
+    'REMOTE_ADDR' => '172.22.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.6.2',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/var/www/htdocs/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/api/option_add',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '32',
+    'CONTENT_TYPE' => 'application/json',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1617114372.28551,
+    'REQUEST_TIME' => 1617114372,
+    'argv' => [],
+    'argc' => 0,
+]" while reading upstream, client: 172.22.0.1, server: , request: "POST /api/option_add HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "europrest.local:8050", referrer: "http://europrest.local:8050/api/documentation"
